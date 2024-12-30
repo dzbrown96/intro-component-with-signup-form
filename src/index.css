@@ -47,3 +47,120 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/*  CUSTOM VARIABLES  */
+#root{
+  --color-white: #FFFFFF;
+  --color-pink: #FF7979;
+  --color-green: #38CC8B;
+  --color-purple: #5E54A4;
+  --color-darkGray: #3D3B48;
+  --color-lightGray: #BAB7D4;
+
+
+}
+
+body{
+  font-family: "IBM Plex Sans", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main{
+  background-image: url(./assets/images/bg-intro-mobile.png);
+  background-color: var(--color-pink);
+  height: 100vh;
+  padding: 1rem;
+}
+.hero{
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  margin-top: 3rem;
+}
+.title{
+  font-size: 1.5rem;
+
+  margin-bottom: 1rem;
+}
+.description{
+  font-size: 1rem;
+
+  margin-bottom: 3rem;
+}
+
+
+.form{
+  padding-bottom: 2rem;
+}
+.form-pricing{
+  width: 100%;
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0rem 0.33rem hsla(0, 0%, 0%, 15%);
+  margin-bottom: 1rem;
+}
+.form-pricing-text{
+  font-size: 0.9rem;
+}
+.form-pricing-text-bold{
+  font-weight: 700;
+}
+.form-main{
+  background-color: var(--color-white);
+  border-radius: 0.5rem;
+  box-shadow: 0rem 0.33rem hsla(0, 0%, 0%, 15%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.form-main-input{
+  width: 100%;
+  border: 1px solid var(--color-lightGray);
+  
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+}
+.form-main-input:focus{
+  outline: none;
+  border: 2px solid var(--color-pink);
+}
+.form-main-input::placeholder{
+  color: var(--color-darkGray);
+}
+.submit-btn{
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  padding: 0.75rem;
+  box-shadow: 0rem 0.1rem hsla(0, 0%, 0%, 25%);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.disclaimer{
+  color: var(--color-lightGray);
+  font-size: 0.75rem;
+}
+.disclaimer-bold{
+  color: var(--color-pink);
+  font-weight: 700;
+}
+@media(max-width: 320px){
+  .main{
+    height: 100%;
+  }
+}
+@media(min-width: 479px){}
