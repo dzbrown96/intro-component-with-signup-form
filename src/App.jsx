@@ -17,7 +17,7 @@ function App() {
         <div className="form-main">
           
             <input className="form-main-input" type="text" id="firstName" name="firstName" placeholder="First Name" required/>
-          
+            
           
             <input className="form-main-input" type="text" id="lastName" name="lastName" placeholder="Last Name" required/>
           

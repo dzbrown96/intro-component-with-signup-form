@@ -81,6 +81,7 @@ body{
 }
 .title{
   font-size: 1.5rem;
+  line-height: 2rem;
 
   margin-bottom: 1rem;
 }
@@ -102,7 +103,7 @@ body{
   padding: 1rem;
   text-align: center;
   box-shadow: 0rem 0.33rem hsla(0, 0%, 0%, 15%);
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .form-pricing-text{
   font-size: 0.9rem;
@@ -123,6 +124,7 @@ body{
   width: 100%;
 }
 .form-main-input{
+  font-size: .9rem;
   width: 100%;
   border: 1px solid var(--color-lightGray);
   
@@ -138,6 +140,9 @@ body{
 .form-main-input::placeholder{
   color: var(--color-darkGray);
 }
+.form-main-input:hover{
+  cursor: pointer;
+}
 .submit-btn{
   width: 100%;
   border: none;
@@ -149,6 +154,9 @@ body{
   margin-bottom: 0.5rem;
   text-transform: uppercase;
   font-weight: 700;
+}
+.submit-btn:hover{
+  cursor: pointer;
 }
 .disclaimer{
   color: var(--color-lightGray);
@@ -163,4 +171,101 @@ body{
     height: 100%;
   }
 }
-@media(min-width: 479px){}
+@media(min-width: 426px){
+  .main{
+    
+    padding: 3rem 6rem;
+  }
+  .hero{
+    margin-top: 1rem;
+  }
+  .form{
+  }
+  .form-main{
+    padding: 2rem;
+  }
+  .form-main-input{
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .submit-btn{
+    padding: 1rem;
+  }
+}
+@media(min-width: 769px){
+  /* Desktop */
+  
+.main{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  
+}
+.hero{
+  width: 33.75rem;
+  padding-right: 3rem;
+  margin-top: 0rem;
+}
+.title{
+  font-size: 3rem;
+  line-height: 3rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.description{
+  text-align: left;
+}
+.form{
+  width: 33.75rem;
+}
+.form-main{
+  padding: 2.5rem;
+}
+.form-main-input{
+  padding: .85rem;
+  margin-bottom: 1.5rem;
+}
+}
+  
+@media(min-width: 2559px){
+  .hero{
+    width: 67.5rem;
+    padding-right: 3rem;
+    margin-top: 0rem;
+  }
+  .title{
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .description{
+    font-size: 2rem;
+  }
+  .form{
+    width: 67.5rem;
+  }
+  .form-pricing{
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .form-pricing-text{
+    font-size: 2rem;
+  }
+  .form-main{
+    padding: 4rem;
+  }
+  .form-main-input{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+  }
+  .submit-btn{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+  .disclaimer{
+    font-size: 1.5rem;
+  }
+}
